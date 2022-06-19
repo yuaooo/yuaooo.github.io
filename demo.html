@@ -15,7 +15,7 @@
                 position: absolute;
                 transform: translate3d(0px, 0px, 0px);
                 left: 5%;
-                top: 82%;
+                bottom: 7%;
                 width: 990px;
                 height: 400px;
                 background-size: 100% 100%;
@@ -49,9 +49,9 @@
                 position: absolute;
                 transform: translate3d(0px, 0px, 0px);
                 left: 58%;
-                top: 9%;
-                width: 743px;
-                height: 190px;
+                top: 10%;
+                width: 594px;
+                height: 152px;
                 background-size: 100% 100%;
                 background-image: url(images/chen.png);
                 pointer-events: none;
@@ -64,9 +64,9 @@
                 position: absolute;
                 transform: translate3d(0px, 0px, 0px);
                 left: 58%;
-                top: 16%;
-                width: 770px;
-                height: 194px;
+                top: 20%;
+                width: 616px;
+                height: 155px;
                 background-size: 100% 100%;
                 background-image: url(images/zuo.png);
                 pointer-events: none;
@@ -79,9 +79,9 @@
                 position: absolute;
                 transform: translate3d(0px, 0px, 0px);
                 left: 58%;
-                top: 23.5%;
-                width: 422px;
-                height: 89px;
+                top: 30%;
+                width: 338px;
+                height: 71px;
                 background-size: 100% 100%;
                 background-image: url(images/shi.png);
                 pointer-events: none;
@@ -144,8 +144,8 @@
         
 		<script >
             var modeSrc = ['./obj/planet_king.fbx', './obj/planet_chen.fbx', './obj/planet_zuo.fbx', './obj/planet_shi.fbx'];
-            var particalNum = 50000; //一共有多少个点;
-            var particalCompleteStep = 1000; //第n个点已经运动结束，只有所有粒子都跑到对应的位置，才开始加载另一个模型;
+            var particalNum = 30000; //一共有多少个点;
+            var particalCompleteStep = 30000; //第n个点已经运动结束，只有所有粒子都跑到对应的位置，才开始加载另一个模型;
             var tween;
 
             var scene = new THREE.Scene();
@@ -309,7 +309,7 @@
                     }
                 },function ( xhr ) {
                     //你可以在这里弄个加载进度，但是我的模型都只有几十kb，我就偷个懒不弄了;
-                    console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
+                    //console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
                 });
             }      
 
